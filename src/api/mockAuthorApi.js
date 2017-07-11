@@ -22,7 +22,7 @@ const authors = [
 ];
 
 //This would be performed on the server in a real app. Just stubbing in.
-const generateId = (author) => {
+const generateId = author => {
   return author.firstName.toLowerCase() + '-' + author.lastName.toLowerCase();
 };
 
@@ -36,7 +36,7 @@ class AuthorApi {
   }
 
   static saveAuthor(author) {
-	author = Object.assign({}, author); // to avoid manipulating object passed in.
+    author = Object.assign({}, author); // to avoid manipulating object passed in.
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         // Simulate server-side validation

@@ -1,5 +1,5 @@
-import React, {PropTypes} from 'react';
-import {connect} from 'react-redux';
+import React, { PropTypes } from 'react';
+import { connect } from 'react-redux';
 import * as courseActions from '../../actions/courseActions';
 
 class CoursesPage extends React.Component {
@@ -25,7 +25,11 @@ class CoursesPage extends React.Component {
   }
 
   courseRow(course, index) {
-    return <div key={index}>{course.title}</div>;
+    return (
+      <div key={index}>
+        {course.title}
+      </div>
+    );
   }
 
   render() {
