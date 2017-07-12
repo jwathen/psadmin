@@ -22,7 +22,7 @@ class CoursesPage extends React.Component {
   }
 
   onClickSave() {
-    this.props.createCourse(this.state.course);
+    this.props.actions.createCourse(this.state.course);
   }
 
   courseRow(course, index) {
