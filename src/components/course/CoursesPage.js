@@ -7,7 +7,6 @@ import CourseList from './CourseList';
 
 class CoursesPage extends React.Component {
   render() {
-    console.log('123 456');
     return (
       <div>
         <h1>Courses</h1>
